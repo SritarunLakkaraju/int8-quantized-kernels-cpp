@@ -1,0 +1,8 @@
+int8 vs fp32 GEMM, square n x n (G-ops/s, 11 threads for *_omp)
+kernel                      128      256      512     1024     2048
+fp32_packed                79.0    100.3    106.6    109.8    110.5
+int8_naive                  7.5      7.1      3.7      3.8        -
+int8_widen                 37.4     39.5     40.6     40.2     39.5
+int8_sdot_packed          195.8    266.8    347.9    398.4    405.9
+fp32_packed_omp            79.1    240.7    537.6    626.2    663.6
+int8_sdot_packed_omp      196.6    396.9   1045.3   1792.7   2142.7

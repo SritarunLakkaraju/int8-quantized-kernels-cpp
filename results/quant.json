@@ -1,0 +1,15 @@
+{
+  "calibration_images": 1000,
+  "eval_images": 9000,
+  "fp32_accuracy": 0.9873,
+  "int8_accuracy": 0.9873,
+  "agreement": 0.9990,
+  "mean_abs_logit_error": 0.02794,
+  "max_abs_logit_error": 0.4946,
+  "fp32_weight_kb": 808.3,
+  "int8_weight_kb": 202.6,
+  "latency_us_int8": 58.63,
+  "latency_us_fp32_im2col": 70.46,
+  "latency_us_fp32_auto": 45.12,
+  "layers": {"conv1": {"w_scale": 0.003835, "sqnr_db": 47.51, "out_scale": 0.01719, "out_zp": -128}, "conv2": {"w_scale": 0.002385, "sqnr_db": 41.65, "out_scale": 0.02845, "out_zp": -128}, "fc1": {"w_scale": 0.002184, "sqnr_db": 33.45, "out_scale": 0.07500, "out_zp": -128}, "fc2": {"w_scale": 0.001724, "sqnr_db": 43.07, "out_scale": 0.16490, "out_zp": -3}}
+}

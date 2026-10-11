@@ -1,0 +1,8 @@
+input 1 28 28
+conv conv1 relu
+maxpool
+conv conv2 relu
+maxpool
+flatten
+linear fc1 relu
+linear fc2 none

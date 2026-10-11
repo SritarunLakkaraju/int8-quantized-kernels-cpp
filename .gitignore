@@ -1,0 +1,15 @@
+# built binaries
+bench_qgemm
+quant_mnist
+*.o
+*.dSYM/
+
+# python
+.venv/
+__pycache__/
+
+# recreated locally
+data/
+model/test_images.bin
+
+.DS_Store

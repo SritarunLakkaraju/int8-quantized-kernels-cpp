@@ -1,0 +1,10 @@
+Post-training INT8 quantisation of the MNIST CNN (1000 calibration, 9000 evaluation images)
+  input range [-0.424, 2.821] -> scale 0.01273, zero point -95
+  conv1  weight scale 0.003835 (SQNR 47.5 dB), output scale 0.01719, zero point -128
+  conv2  weight scale 0.002385 (SQNR 41.6 dB), output scale 0.02845, zero point -128
+  fc1    weight scale 0.002184 (SQNR 33.5 dB), output scale 0.07500, zero point -128
+  fc2    weight scale 0.001724 (SQNR 43.1 dB), output scale 0.16490, zero point -3
+  accuracy  FP32 98.73%   INT8 98.73%   (change +0.00 points)
+  top-1 agreement INT8 vs FP32: 99.90%   mean |logit error| 0.0279   max 0.495
+  weights: FP32 808.3 KB -> INT8 202.6 KB (3.99x smaller)
+  latency (batch 1, 1 thread, median): INT8 58.6 us | FP32 im2col+GEMM 70.5 us | FP32 engine default 45.1 us
